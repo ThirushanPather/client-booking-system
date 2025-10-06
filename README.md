@@ -72,22 +72,6 @@ npm start
 ```
 5. Open http://localhost:3000 in your browser
 
-## Project Structure
-
-pilates-app/
-├── src/
-│   ├── components/
-│   │   ├── admin/          # Admin dashboard components
-│   │   ├── booking/        # Booking system components
-│   │   ├── common/         # Shared components
-│   │   ├── layout/         # Layout components
-│   │   └── sections/       # Landing page sections
-│   ├── pages/              # Page components
-│   ├── services/           # Firebase services
-│   └── utils/              # Utility functions
-├── public/                 # Static assets
-└── package.json
-
 ## Key Features Breakdown
 ### Landing Page:
 
