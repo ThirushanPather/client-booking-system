@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Pilates Studio Client Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application featuring a landing page and booking management system for a Pilates studio. Built with modern web technologies and Firebase for real-time data management.
 
-## Available Scripts
+## Features
+- Professional landing page showcasing studio services
+- Real-time class booking system
+- Admin dashboard for managing bookings
+- User authentication and authorization
+- Responsive design for mobile and desktop
+- Booking confirmation and management
+- Class schedule visualization
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+**Frontend:**
+- React
+- JavaScript
+- TailwindCSS
+- CSS3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Backend & Database:**
+- Firebase Authentication
+- Firebase Firestore (NoSQL database)
+- Firebase Hosting
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Development Tools:**
+- Node.js
+- npm
+- PostCSS
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Landing Page
+<img src="LandingPage.gif" alt="Studio Landing Page" width="700"/>
 
-### `npm run build`
+### Booking System
+<img src="BookingSystem.gif" alt="Booking System Demo" width="700"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v14 or higher)
+- npm
+- Firebase account
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Local Development
 
-### `npm run eject`
+1. Clone the repository:
+```
+git clone https://github.com/ThirushanPather/client-booking-system.git
+cd client-booking-system
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Create a .env file in the root directory and add your Firebase configuration:
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
+```
+npm start
+```
+5. Open http://localhost:3000 in your browser
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+pilates-app/
+├── src/
+│   ├── components/
+│   │   ├── admin/          # Admin dashboard components
+│   │   ├── booking/        # Booking system components
+│   │   ├── common/         # Shared components
+│   │   ├── layout/         # Layout components
+│   │   └── sections/       # Landing page sections
+│   ├── pages/              # Page components
+│   ├── services/           # Firebase services
+│   └── utils/              # Utility functions
+├── public/                 # Static assets
+└── package.json
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Key Features Breakdown
+### Landing Page:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Hero section with studio introduction
+- Services and class offerings
+- Instructor profiles
+- Pricing information
+- Contact section
 
-### Code Splitting
+### Booking System:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Browse available classes
+- Real-time availability checking
+- Easy booking interface
+- Booking confirmation
 
-### Analyzing the Bundle Size
+### Admin Dashboard:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Manage class schedules
+- View all bookings
+- User management
 
-### Making a Progressive Web App
+## Firebase Configuration
+This application uses Firebase for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Authentication: Secure user login and registration
+Firestore: Real-time database for bookings and class data
+Hosting: Optional deployment platform
 
-### Advanced Configuration
+## Project Status
+✅ Completed and deployed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Enhancements
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Payment integration
+Email notifications for bookings
+Waitlist functionality
+Membership packages
+Mobile app version
