@@ -5,7 +5,6 @@ A full-stack web application featuring a landing page and booking management sys
 ## Features
 - Professional landing page showcasing studio services
 - Real-time class booking system
-- Admin dashboard for managing bookings
 - User authentication and authorization
 - Responsive design for mobile and desktop
 - Booking confirmation and management
@@ -105,12 +104,6 @@ pilates-app/
 - Easy booking interface
 - Booking confirmation
 
-### Admin Dashboard:
-
-- Manage class schedules
-- View all bookings
-- User management
-
 ## Firebase Configuration
 This application uses Firebase for:
 
@@ -118,13 +111,3 @@ Authentication: Secure user login and registration
 Firestore: Real-time database for bookings and class data
 Hosting: Optional deployment platform
 
-## Project Status
-✅ Completed and deployed
-
-## Future Enhancements
-
-Payment integration
-Email notifications for bookings
-Waitlist functionality
-Membership packages
-Mobile app version
